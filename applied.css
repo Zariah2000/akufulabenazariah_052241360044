@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing_page{
+    height: 100vh;
+    width: 100%;
+    background: url("./images/fast-removebg-preview.png") no-repeat center/cover fixed; 
+    position: relative;
+    border-bottom: red 1px solid;
+}
+
+.landing_page nav{
+    padding: 45px 0 5px 0;
+    margin:  0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: white 1px solid;
+}
+.landing_page ul{
+    padding: 44px ;
+    /* margin: 50px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-bottom: white 1px solid;
+}
+
+.landing_page nav a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.landing_page ul a{
+    text-transform: uppercase;
+}
+
+.landing_page nav a:hover{
+    color: dodgerblue;
+}
+
+.landing_page nav a:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.landing_page nav a:nth-child(2){
+    font-size: 40px;
+}
+
+ul{
+    /* padding: 20px ; */
+    font-weight: bold;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+    transition:  2.5s;
+}
+
+ .landing_page img{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+} 
+.landing_page p{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+} 
+
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+footer{
+    background-color:brown;
+    margin-top: 100px;
+    color: white;
+    padding: 40px 0;
+
+}
+.footer_container{
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+.footer_content{
+    display: flex;
+    flex: 1;
+    margin-right: 40px;
+    gap: 20px;
+}
+footer a{
+    display: block;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+}
+.footer-bottom p{
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-bottom img{
+    width: 50px;
+    flex-wrap: wrap;
+}
+.department_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding-top: 20px;
+    border-radius: 20px;
+    width: 70%;
+    height: 120vh;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.department_section .department{
+text-align: center;
+background-color: white;
+border-radius: 10px;
+margin-left: 20px;
+justify-content: center;
+width: 50%;
+width: 60vh;
+}
+.department h2{
+    padding-top: 20%;
+}
+h2 a{
+    padding-bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+     color: brown;
+}
+.department button{
+    margin-top: 10px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    width: 250px;
+    height: 25px;
+    cursor: pointer;
+    
+}
+button a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dean_info{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 20%;
+    /* background-color: whitesmoke; */
+    border-radius: 20px;
+    padding-top: 20px;
+}
+.dean h2{
+    text-align: center;
+    border-bottom: brown 1px solid;
+}
+ .dean_info .dean img{
+    width: 300px;
+    height: 250px;
+    /* position: absolute; */
+    object-fit: cover;
+    transition: 1s;
+    cursor: pointer;
+}
+.dean_info .dean:hover img{
+    transform: scale(1.2);
+}
+ .dean .title{
+    background-color: #333;
+    color: white;
+    padding: 0 10px;
+    font-size: 32;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 30%;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    text-transform: uppercase;
+}
+.dean .name{
+    background-color: #333;
+    color: white;
+    padding: 0 10px;
+    font-size: 32;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 30%;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    text-transform: uppercase;
+}
+.dean:hover .name,
+.dean:hover .title{
+    opacity: 1;
+}
+.sub_menu{
+    display: none;
+    width: 25%;
+    background-color: black;
+    padding-left: 10px;
+   justify-content: space-between;
+}
+.sub_menu a{
+    text-align: center;
+}
+.landing_page ul li:hover .sub_menu{
+    display: block;
+    position: absolute;
+    /* margin-top: 5px; */
+    margin-left: 15px;
+}
